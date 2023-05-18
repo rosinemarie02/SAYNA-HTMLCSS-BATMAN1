@@ -1,0 +1,450 @@
+:root {
+    --primary: #ffc636;
+    --secondary: #0a0b5b;
+    --tertiary: #000;
+    --test: linear-gradient(to right, #EDDEBF, #19587D);
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+*:focus {
+    outline: none;
+}
+body{
+    height: 901px;
+    width: auto;
+    background: black url('/images/Illustrations/Bathome1.png') 80% 20% no-repeat;
+    background-size: cover;
+    font-size: 14px; 
+}
+.logobat img:hover {
+    -webkit-filter: grayscale(100%) brightness(200%) sepia(90%) hue-rotate(5deg) saturate(500%) contrast(1);
+    filter: grayscale(50%) brightness(70%) sepia(100%) hue-rotate(5deg) saturate(500%) contrast(1);
+}
+.nav ul li a{
+    margin: 0 25%;
+    list-style: none;
+    color: #fff;
+    padding: 10px 0;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0));
+    background-size: 0 2px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all .7s ease-out yellow;
+}
+.nav ul li a:hover{
+    font-weight: 600;
+    background-size: 100% 4px, auto;
+    color: #f1ee04;
+    
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60%;
+    padding-top: 5%;
+}
+.nav ul li a{
+    text-align: right;
+}
+.text1{
+    text-align: center;
+    padding: 300px 0;
+}
+.text2{
+    text-align: justify;
+}
+.flèche{
+    text-align: center;
+    scale: 50%;
+    padding: 5%;
+}
+    /*buttons style*/
+    .button{
+        padding-top: 3%;
+    }
+    .btn{
+        border: none;
+        background: linear-gradient(to right,#EDDEBF, #890008);
+        color: white;
+        padding: 5px 10px;
+        margin: 1%;
+        display: inline-block;
+        justify-content: space-between;
+        opacity: 40%;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    .btn:hover{
+        opacity: 100%;
+    }
+    input,textarea,select{
+        background: rgba(0, 0, 0, 0.05);
+        padding: 10px 16px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-color: white;
+    }
+
+.scroll img:hover{
+    -webkit-filter: grayscale(100%) brightness(200%) sepia(90%) hue-rotate(5deg) saturate(500%) contrast(1);
+    filter: grayscale(50%) brightness(70%) sepia(100%) hue-rotate(5deg) saturate(500%) contrast(1);
+}
+.scroll{
+    text-align: center;
+    position: fixed;
+    right: 3%;
+    top: 40%;
+    z-index: 2;
+}
+.scroll >*{
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    z-index: 1;
+}
+.scroll img{
+    width: 10vw;
+    max-width: 104px;
+    min-width: 32px;
+}
+.mediasoc img{
+    width: 3vw;
+    max-width: 24px;
+    min-width: 10px;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+}
+
+/*cards style*/
+.thebats{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 10%;
+}
+.thebats img{
+    width: 90%;
+    padding: 30px 0 10px 0;
+    transition: transform .5s;
+}
+.thebats p{
+    font-size: 1.5vw;
+}
+.thebats img:hover{
+    transform: scale(1.1); /*10%*/
+}
+/*batarang and batman images style*/
+/*justice league section style*/
+.jl{
+    align-items: center;
+    margin-top: 2%;
+}
+.jl img{
+    width: 100%;
+}
+.titles-stuff-jl{
+    padding: 0 3%;
+}
+/*thumbnail things section*/
+.media{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    column-gap: 2%;
+}
+.synopsis{
+    display: flex;
+    background: linear-gradient(to bottom right, #4e4a40, #081d2a);
+    border-radius: 10px;
+    align-items: center;
+}
+.synopsis img{
+    width: 100%; height: 100%;
+    max-width: 155px;
+    max-height: 580px;
+}
+.arrow img{
+    vertical-align: middle;
+}
+/*trailer section style*/
+.video{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0 0 10% 0;
+}
+.video img{
+    padding: 10% 0;
+    width: 80%;
+    transition: 0.5s ease-in-out;
+}
+.video img:hover{
+    filter: drop-shadow(0 5px 1rem white);
+}
+
+/*formulaire*/
+form{
+    background: linear-gradient(to bottom right, #4e4a40, #081d2a);
+}
+.formulaire{
+    padding: 5% 0 5% 0;
+    margin: 0 12%;
+}
+.formulaire input, select{
+    width: 100%;
+}
+.formulaire{
+    margin-bottom: 30px;
+}
+    /*custom buttons*/
+    .button2, .button3{
+        display: flex;
+        justify-content: center;
+        padding: 2%;
+        column-gap: 2%;
+    }
+    .button2 .btn2{
+        padding: 4px 15px;
+        background: none;
+        border: 3px solid;
+        border-image: linear-gradient(to right, #EDDEBF, #19587D) 1;
+        opacity: .4;
+        transition: .5s all ease-in-out;
+    }
+    .button2 .btn2:hover{
+        opacity: 1;
+    }
+    input[type="checkbox"] {
+        margin: -80px 0 0 40px;
+    }
+    [value]{
+        background-color: gray;
+        color: black;
+    }
+/*quotes*/
+.quotes p{
+    text-align: center;
+}
+    /*guillemets*/
+    .leftg{
+        text-align: left;
+        padding: 5% 0 10% 0;
+    }
+    .rightg{
+        text-align: right;
+        padding: 0 10% 0 5%;
+    }
+    .rightg img, .leftg img{
+        width: 7vw;
+    }
+    /*points... doesn't even know why they wanted dots... whatever*/
+    .sans {
+        height: 5px;
+        width: 5px;
+        background-color: none;
+        border: 1px solid #429ef5;
+        border-radius: 50%;
+        display: inline-block;
+    }
+/*footer*/
+.copyright{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    padding: 5% 0;
+}
+.copyright img{
+    width: 24px;
+    height: 24px;
+}
+.credit{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.credit img{
+    padding: 10px;
+}
+.smallicons{
+    margin-top: 15px;
+}
+
+/*fonts... making 'em responsive*/
+@font-face{
+    font-family: 'Titre';
+    src: url('/fonts/Rajdhani-Medium.ttf');
+}
+@font-face{
+    font-family: 'Affiche';
+    src: url('/fonts/SpaceGrotesk-Bold.ttf');
+}
+@font-face{
+    font-family: 'Texte';
+    src: url('/fonts/SpaceGrotesk-Regular.ttf');
+}
+h1{ 
+    font: 1.8em 'Titre';
+}
+a,li{ 
+    font: 5vw 'Titre';
+}
+button, .btn, .btn2{
+    font: 1em 'Titre';
+}
+h2{
+    font: 1.1em 'Texte';
+}
+h3{
+    font: 1.2em 'Texte';
+}
+p{
+    font: 0.9em 'Texte';
+}
+/*final touch... I guess*/
+@media screen and (max-width: 310px){
+    form{
+        width: 150%;
+    }
+}
+/*responsive... mobile*/
+@media screen and (max-width: 400px) {
+    /* .scroll{
+        display: none;
+    } */
+    .nav{
+        padding-top: 20%;
+        column-gap: 20%;
+    }
+    .homelogo img{
+        width: 80%;
+    }
+    a, li{
+        font: 1.6em 'Titre';
+    }
+    .flèche{
+        padding-bottom: 50%;
+    }
+    .flèche img{
+        width: 20%;
+    }
+    body{
+        font-size: 12px;
+    }
+}
+/*responsive... tablets petit écran*/
+@media screen and (max-width: 620px) {
+    /* .scroll{
+        display: none;
+    } */
+    .nav{
+        padding-top: 15%;
+        column-gap: 45%;
+    }
+    .homelogo img{
+        width: 85%;
+    }
+    a, li{
+        font: 1.7em 'Titre';
+    }
+    .flèche{
+        padding-bottom: 30%;
+    }
+    .flèche img{
+        width: 20%;
+    }
+    .video{
+        padding-bottom: 20%;
+    }
+}
+/*responsive partie IMBD*/
+@media screen and (min-width: 900px){
+    .media{
+        width: 70%;
+        font-size: .9em;
+    }
+}
+@media screen and (max-width: 775px){
+    .media{
+        font-size: .85em;
+    }
+}
+@media screen and (max-width: 520px){
+    .media{
+        font-size: .6em;
+    }
+    .synopsis img{
+        width: 40%;
+        max-width: 155px;
+        max-height: 580px;
+    }
+}
+@media screen and (max-width: 350px){
+    .media{
+        font-size: .5em;
+    }
+    .synopsis img{
+        width: 30%;
+        max-width: 155px;
+        max-height: 580px;
+    }
+}
+/*responsive... texts ... they have to  looks great... so*/
+@media screen and (min-width: 620px) {
+    body{
+        font-size: 16px;
+    }
+    .btn{
+        padding: 7px 15px;
+    }
+}
+@media screen and (min-width: 960px) {
+    body{
+        font-size: 18px;
+    }
+    .btn{
+        padding: 10px 20px;
+    }
+
+}
+@media screen and (min-width: 1200px) {
+    body{
+        font-size: 20px;
+    }
+    .btn{
+        padding: 15px 30px;
+    }
+}
+@media screen and (min-width: 1600px) {
+    body{
+        font-size: 26px;
+    }
+    .btn{
+        padding: 15px 45px;
+    }
+}
+@media screen and (min-width: 1900px) {
+    body{
+        font-size: 30px;
+    }
+    .btn{
+        padding: 20px 50px;
+    }
+}
+
+/*margins of specific elements*/
+p, h1, .thebats, .video, #quotes, footer{
+    margin: 0 13% 0 9%;
+}
+.imdb p, h3{
+    margin: 1%;
+}
